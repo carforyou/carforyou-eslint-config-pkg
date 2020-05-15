@@ -5,8 +5,8 @@
   "scripts": {
     "version": "npm run build",
     "build": "pika build",
-    "lint": "tslint --project tsconfig.lint.json",
-    "format": "tslint --project tsconfig.lint.json --fix",
+    "lint": "eslint --ext ts,js,tsx,jsx,json .",
+    "format": "npm run lint -- --fix",
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "test:debug": "node --inspect-brk --inspect=127.0.0.1:9229 ./node_modules/jest/bin/jest.js --runInBand"
