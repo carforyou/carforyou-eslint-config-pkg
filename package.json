@@ -19,8 +19,23 @@
   "license": "MIT",
   "homepage": "https://github.com/carforyou/carforyou-eslint-rules-pkg#readme",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "eslint": "^6.8.0",
-    "prettier": "^2.0.5"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.11.0",
+    "eslint-plugin-jsdoc": "^25.4.1",
+    "eslint-plugin-json": "^2.1.1",
+    "eslint-plugin-prefer-arrow": "^1.2.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-plugin-testing-library": "^3.1.2",
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
