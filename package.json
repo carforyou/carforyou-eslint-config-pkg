@@ -1,5 +1,5 @@
 {
-  "name": "@carforyou/eslint-rules",
+  "name": "@carforyou/eslint-config",
   "version": "0.0.0",
   "description": "ESLint rules that we use at CAR FOR YOU",
   "scripts": {
