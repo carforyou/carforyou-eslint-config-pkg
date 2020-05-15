@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carforyou/carforyou-example-pkg.git"
+    "url": "git+https://github.com/carforyou/carforyou-eslint-rules-pkg.git"
   },
   "author": "CAR FOR YOU",
   "license": "MIT",
-  "homepage": "https://github.com/carforyou/example-pkg#readme",
+  "homepage": "https://github.com/carforyou/carforyou-eslint-rules-pkg#readme",
   "peerDependencies": {
     "eslint": "^6.8.0",
     "prettier": "^2.0.5"
