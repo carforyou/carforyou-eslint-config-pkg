@@ -1,7 +1,7 @@
 {
-  "name": "@carforyou/example",
+  "name": "@carforyou/eslint-rules",
   "version": "0.0.0",
-  "description": "Example package",
+  "description": "ESLint rules that we use at CAR FOR YOU",
   "scripts": {
     "version": "npm run build",
     "build": "pika build",
