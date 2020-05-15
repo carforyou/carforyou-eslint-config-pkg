@@ -52,6 +52,9 @@
     "ts-jest": "^25.5.1",
     "typescript": "^3.9.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "@pika/pack": {
     "pipeline": [
       [
