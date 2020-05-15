@@ -102,7 +102,7 @@ module.exports = {
     "jest/no-mocks-import": "off",
     "prettier/prettier": ["error", { semi: false }],
     "prefer-spread": "off",
-    "no-console": "error",
+    "no-console": ["error", { allow: ["info", "error"] }],
     "no-irregular-whitespace": [
       "error",
       {
