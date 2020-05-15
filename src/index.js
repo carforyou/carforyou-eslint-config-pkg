@@ -64,6 +64,7 @@ module.exports = {
     },
     {
       files: [
+        "**/__tests__/next/**/*.test.tsx",
         "**/__tests__/pages/**/*.test.tsx",
         "**/__tests__/pages/**/*.test.jsx",
         "**/components/**/*.test.tsx",
