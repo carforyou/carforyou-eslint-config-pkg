@@ -132,8 +132,11 @@ module.exports = {
       "error",
       {
         allow: [
+          "**/*.css",
           "**/configuration/**/*",
           "**/configuration/*",
+          "**/__fixtures__/**/*",
+          "**/__fixtures__/*",
           "@testing-library/**/*",
           "next/*",
           "next-i18next/*",
