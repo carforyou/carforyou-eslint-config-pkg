@@ -95,7 +95,6 @@ jobs:
       - notify_slack_failure:
           only_for_branches: master
 
-
 workflows:
   version: 2
   test_and_release:
@@ -123,7 +122,6 @@ workflows:
           filters:
             branches:
               only: master
-
     - pre_release:
         requires:
           - lint
