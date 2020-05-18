@@ -72,7 +72,7 @@
   "@pika/pack": {
     "pipeline": [
       [
-        ".",
+        "./packMain.js",
         {
           "main": "index.js"
         }
