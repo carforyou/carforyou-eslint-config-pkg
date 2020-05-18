@@ -120,7 +120,7 @@ module.exports = {
       },
       {
         selector: "typeLike",
-        format: ["PascalCase"]
+        format: ["PascalCase"],
       },
     ],
     "react/prop-types": "off",
