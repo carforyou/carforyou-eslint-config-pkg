@@ -117,6 +117,23 @@ module.exports = {
       {
         selector: "property",
         format: ["camelCase", "snake_case", "PascalCase"],
+        leadingUnderscore: "allow",
+      },
+      {
+        selector: "property",
+        format: null,
+        filter: {
+          regex: "__html",
+          match: true,
+        },
+      },
+      {
+        selector: "property",
+        format: null,
+        filter: {
+          regex: "UNSAFE_",
+          match: true,
+        },
       },
       {
         selector: "typeLike",
