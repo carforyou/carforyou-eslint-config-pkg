@@ -1,3 +1,9 @@
 module.exports = {
-  extends: ["./src/index.js"],
+  extends: ["./index.js"],
+  overrides: [
+    {
+      files: ["packMain.js"],
+      parser: "esprima",
+    },
+  ],
 }

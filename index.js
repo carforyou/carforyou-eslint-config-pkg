@@ -1,24 +1,16 @@
 module.exports = {
   env: {
-    browser: true,
     node: true,
-    "shared-node-browser": true,
-    "cypress/globals": true,
     "jest/globals": true,
   },
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:cypress/recommended",
-    "plugin:jest/recommended",
-    "plugin:testing-library/react",
-    "plugin:json/recommended",
     "plugin:prettier/recommended",
-    "prettier/react",
     "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
+    "plugin:json/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -31,49 +23,17 @@ module.exports = {
   plugins: [
     "@typescript-eslint",
     "@typescript-eslint/tslint",
-    "react",
-    "cypress",
     "jest",
-    "testing-library",
     "prettier",
     "import",
     "json",
   ],
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
   overrides: [
     {
-      files: ["*.js", "*.jsx"],
+      files: ["*.js"],
       rules: {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
-      },
-    },
-    {
-      files: ["**/cypress/**/*"],
-      rules: {
-        "jest/expect-expect": "off",
-        "jest/valid-expect-in-promise": "off",
-        "jest/valid-expect": "off",
-        "jest/no-standalone-expect": "off",
-        "testing-library/await-async-query": "off",
-      },
-    },
-    {
-      files: [
-        "**/__tests__/next/**/*.test.tsx",
-        "**/__tests__/pages/**/*.test.tsx",
-        "**/__tests__/pages/**/*.test.jsx",
-        "**/components/**/*.test.tsx",
-        "**/components/**/*.test.jsx",
-      ],
-      rules: {
-        // off because of testing library
-        "jest/valid-expect": "off",
-        "jest/expect-expect": "off",
       },
     },
     {
@@ -144,9 +104,6 @@ module.exports = {
       "error",
       { functions: false, variables: false },
     ],
-    "react/prop-types": "off",
-    "react/display-name": "off",
-    "jest/no-mocks-import": "off",
     "prettier/prettier": ["error", { semi: false }],
     "prefer-spread": "off",
     "no-console": ["error", { allow: ["info", "warn", "error"] }],
@@ -175,23 +132,6 @@ module.exports = {
     ],
     // TODO: we had that enabled but also disabled on in multiple files
     "sort-keys": "off",
-    "import/no-internal-modules": [
-      "error",
-      {
-        allow: [
-          "**/*.css",
-          "**/configuration/**/*",
-          "**/configuration/*",
-          "**/__fixtures__/**/*",
-          "**/__fixtures__/*",
-          "@testing-library/**/*",
-          "next/*",
-          "next-i18next/*",
-          "react-dom/*",
-        ],
-      },
-    ],
     "json/*": ["error", "allowComments"],
-    "react-hooks/exhaustive-deps": "off",
   },
 }

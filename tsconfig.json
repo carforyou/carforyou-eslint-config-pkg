@@ -6,6 +6,6 @@
     "esModuleInterop": true,
     "allowJs": true
   },
-  "include": ["src"],
+  "include": ["index.js", "next.js", "react.js", "__tests__/**/*.js"],
   "exclude": ["node_modules"]
 }
