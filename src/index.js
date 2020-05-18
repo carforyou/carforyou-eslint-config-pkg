@@ -97,6 +97,32 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "default",
+        format: ["camelCase"],
+      },
+      {
+        selector: "memberLike",
+        format: ["camelCase", "PascalCase"],
+        leadingUnderscore: "allow",
+      },
+      {
+        selector: "variableLike",
+        format: ["camelCase", "PascalCase"],
+        leadingUnderscore: "allow",
+      },
+      {
+        selector: "property",
+        format: ["camelCase", "snake_case", "PascalCase"],
+      },
+      {
+        selector: "typeLike",
+        format: ["PascalCase"]
+      },
+    ],
     "react/prop-types": "off",
     "react/display-name": "off",
     "jest/no-mocks-import": "off",
