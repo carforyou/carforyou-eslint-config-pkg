@@ -123,6 +123,10 @@ module.exports = {
         format: ["PascalCase"],
       },
     ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      { functions: false, variables: false },
+    ],
     "react/prop-types": "off",
     "react/display-name": "off",
     "jest/no-mocks-import": "off",
