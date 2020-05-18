@@ -123,15 +123,15 @@ module.exports = {
         selector: "property",
         format: null,
         filter: {
-          regex: "__html",
+          regex: "^__html$",
           match: true,
         },
       },
       {
-        selector: "property",
+        selector: "method",
         format: null,
         filter: {
-          regex: "UNSAFE_",
+          regex: "^UNSAFE_",
           match: true,
         },
       },
