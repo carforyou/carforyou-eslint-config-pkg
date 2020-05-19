@@ -1,20 +1,6 @@
 module.exports = {
-  env: {
-    "cypress/globals": true,
-  },
-  extends: ["./react.js", "plugin:cypress/recommended"],
-  plugins: ["cypress"],
+  extends: ["./react.js"],
   overrides: [
-    {
-      files: ["**/cypress/**/*"],
-      rules: {
-        "jest/expect-expect": "off",
-        "jest/valid-expect-in-promise": "off",
-        "jest/valid-expect": "off",
-        "jest/no-standalone-expect": "off",
-        "testing-library/await-async-query": "off",
-      },
-    },
     {
       files: [
         "**/__tests__/next/**/*.test.tsx",

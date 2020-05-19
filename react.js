@@ -3,21 +3,33 @@ module.exports = {
     node: true,
     browser: true,
     "shared-node-browser": true,
+    "cypress/globals": true,
   },
   extends: [
     "./index.js",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:testing-library/react",
+    "plugin:cypress/recommended",
     "prettier/react",
   ],
-  plugins: ["react", "testing-library"],
+  plugins: ["react", "testing-library", "cypress"],
   settings: {
     react: {
       version: "detect",
     },
   },
   overrides: [
+    {
+      files: ["**/cypress/**/*"],
+      rules: {
+        "jest/expect-expect": "off",
+        "jest/valid-expect-in-promise": "off",
+        "jest/valid-expect": "off",
+        "jest/no-standalone-expect": "off",
+        "testing-library/await-async-query": "off",
+      },
+    },
     {
       files: ["*.jsx"],
       rules: {
