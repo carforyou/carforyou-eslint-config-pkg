@@ -54,10 +54,7 @@
   "@pika/pack": {
     "pipeline": [
       [
-        "./packMain.js",
-        {
-          "main": "index.js"
-        }
+        "./packMain.js"
       ],
       [
         "@pika/plugin-copy-assets",
