@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carforyou/carforyou-eslint-rules-pkg.git"
+    "url": "git+https://github.com/carforyou/carforyou-eslint-config-pkg.git"
   },
   "author": "CAR FOR YOU",
   "license": "MIT",
-  "homepage": "https://github.com/carforyou/carforyou-eslint-rules-pkg#readme",
+  "homepage": "https://github.com/carforyou/carforyou-eslint-config-pkg#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/eslint-plugin-tslint": "^2.33.0",
