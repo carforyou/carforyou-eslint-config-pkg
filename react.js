@@ -21,6 +21,10 @@ module.exports = {
   },
   overrides: [
     {
+      files: ["tailwind.config.js"],
+      parser: "@typescript-eslint/parser",
+    },
+    {
       files: ["**/cypress/**/*"],
       rules: {
         "jest/expect-expect": "off",
