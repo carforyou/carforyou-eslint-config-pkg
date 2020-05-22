@@ -109,7 +109,6 @@ module.exports = {
         skipTemplates: true,
       },
     ],
-    // TODO: we had that enabled but also disabled on in multiple files
     "sort-keys": "off",
     "json/*": ["error", "allowComments"],
   },
