@@ -109,22 +109,6 @@ module.exports = {
         skipTemplates: true,
       },
     ],
-    "no-restricted-imports": [
-      "error",
-      {
-        paths: [
-          {
-            name: "next/link",
-            message: 'Please import from "~/components/appLink.tsx" instead.',
-          },
-          {
-            name: "next/router",
-            importNames: ["default"],
-            message: 'Please import from "~/server/routing/routes.ts" instead.',
-          },
-        ],
-      },
-    ],
     // TODO: we had that enabled but also disabled on in multiple files
     "sort-keys": "off",
     "json/*": ["error", "allowComments"],

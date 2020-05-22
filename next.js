@@ -31,5 +31,21 @@ module.exports = {
         ],
       },
     ],
+    "no-restricted-imports": [
+      "error",
+      {
+        paths: [
+          {
+            name: "next/link",
+            message: 'Please import from "~/components/appLink.tsx" instead.',
+          },
+          {
+            name: "next/router",
+            importNames: ["default"],
+            message: 'Please import from "~/server/routing/routes.ts" instead.',
+          },
+        ],
+      },
+    ],
   },
 }
