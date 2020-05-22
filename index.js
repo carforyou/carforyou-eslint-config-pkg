@@ -38,13 +38,7 @@ module.exports = {
       },
     },
     {
-      files: [
-        "babel.config.js",
-        "jest.config.js",
-        "release.config.js",
-        ".eslintrc.js",
-        "*.json",
-      ],
+      files: ["*.config.js", ".eslintrc.js", "*.json"],
       parser: "esprima",
     },
   ],
