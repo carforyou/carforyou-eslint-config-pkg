@@ -2,6 +2,10 @@ module.exports = {
   extends: ["./react.js"],
   overrides: [
     {
+      files: ["next.config.js"],
+      parser: "@typescript-eslint/parser",
+    },
+    {
       files: [
         "**/__tests__/next/**/*.test.tsx",
         "**/__tests__/pages/**/*.test.tsx",
