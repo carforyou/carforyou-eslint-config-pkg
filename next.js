@@ -19,11 +19,7 @@ module.exports = {
       "error",
       {
         allow: [
-          "**/*.css",
-          "@testing-library/**/*",
-          "react-dom/*",
-          "**/__fixtures__/**/*",
-          "**/__fixtures__/*",
+          ...require("./shared.js").whitelistedImports,
           "**/configuration/**/*",
           "**/configuration/*",
           "next/*",

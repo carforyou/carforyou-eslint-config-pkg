@@ -65,7 +65,8 @@
           "files": [
             "index.js",
             "react.js",
-            "next.js"
+            "next.js",
+            "shared.js"
           ]
         }
       ]
