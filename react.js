@@ -53,7 +53,13 @@ module.exports = {
     "import/no-internal-modules": [
       "error",
       {
-        allow: ["**/*.css", "@testing-library/**/*", "react-dom/*"],
+        allow: [
+          "**/*.css",
+          "@testing-library/**/*",
+          "react-dom/*",
+          "**/__fixtures__/**/*",
+          "**/__fixtures__/*",
+        ],
       },
     ],
   },
