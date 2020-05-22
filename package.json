@@ -18,7 +18,6 @@
   "author": "CAR FOR YOU",
   "license": "MIT",
   "homepage": "https://github.com/carforyou/carforyou-eslint-rules-pkg#readme",
-  "peerDependencies": {},
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/eslint-plugin-tslint": "^2.33.0",
