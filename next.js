@@ -19,6 +19,11 @@ module.exports = {
       "error",
       {
         allow: [
+          "**/*.css",
+          "@testing-library/**/*",
+          "react-dom/*",
+          "**/__fixtures__/**/*",
+          "**/__fixtures__/*",
           "**/configuration/**/*",
           "**/configuration/*",
           "next/*",
