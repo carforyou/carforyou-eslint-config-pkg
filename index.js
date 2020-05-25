@@ -95,13 +95,6 @@ module.exports = {
       { functions: false, variables: false },
     ],
     "prettier/prettier": ["error", { semi: false }],
-    "no-irregular-whitespace": [
-      "error",
-      {
-        skipStrings: true,
-        skipTemplates: true,
-      },
-    ],
     "sort-keys": "off",
     "json/*": "error",
   },
