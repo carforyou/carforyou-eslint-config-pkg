@@ -95,7 +95,6 @@ module.exports = {
       { functions: false, variables: false },
     ],
     "prettier/prettier": ["error", { semi: false }],
-    "no-console": ["error", { allow: ["info", "warn", "error"] }],
     "no-irregular-whitespace": [
       "error",
       {
