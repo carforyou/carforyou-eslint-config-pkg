@@ -37,12 +37,12 @@ module.exports = {
         paths: [
           {
             name: "next/link",
-            message: 'Please import from "~/components/appLink.tsx" instead.',
+            message: "Please use AppLink component instead",
           },
           {
             name: "next/router",
             importNames: ["default"],
-            message: 'Please import from "~/server/routing/routes.ts" instead.',
+            message: "Please use router from next-routes instead",
           },
         ],
       },
