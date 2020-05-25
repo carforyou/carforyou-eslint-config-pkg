@@ -35,10 +35,10 @@ module.exports = {
       },
     },
     {
-      files: ["*.jsx"],
-      rules: {
-        "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
+      files: ["*.tsx"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        project: "tsconfig.json",
       },
     },
     {

@@ -13,9 +13,7 @@ module.exports = {
     "plugin:jest/recommended",
     "plugin:json/recommended",
   ],
-  parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "tsconfig.json",
     ecmaVersion: 2020,
     sourceType: "module",
     ecmaFeatures: {
@@ -32,15 +30,11 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["*.js"],
-      rules: {
-        "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
+      files: ["*.ts"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        project: "tsconfig.json",
       },
-    },
-    {
-      files: ["*.config.js", ".eslintrc.js", "*.json"],
-      parser: "esprima",
     },
   ],
   rules: {
