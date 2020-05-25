@@ -103,6 +103,6 @@ module.exports = {
       },
     ],
     "sort-keys": "off",
-    "json/*": ["error", "allowComments"],
+    "json/*": "error",
   },
 }
