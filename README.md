@@ -18,7 +18,7 @@ Add a `format` script to `package.json` to be able to use auto fix:
 ```
   "format": "npm run lint -- --fix",
 ```
-
+### ESLint configuration
 Create `.eslintrc.js` in the root of the project:
 
 ```
@@ -41,6 +41,15 @@ This package provides multiple eslint configurations. They build on top of one a
     ```
     @carforyou/eslint-config/next
     ```
+
+### Prettier configuration
+Create `.prettierrc.js` in the root of the project:
+
+```
+  module.exports = {
+    extends: ["@carforyou/eslint-config/prettier"],
+  }
+```
 
 ## Development
 ```

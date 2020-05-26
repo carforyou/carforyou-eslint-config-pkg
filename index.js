@@ -94,7 +94,7 @@ module.exports = {
       "error",
       { functions: false, variables: false },
     ],
-    "prettier/prettier": ["error", { semi: false }],
+    "prettier/prettier": "error",
     "sort-keys": "off",
     "json/*": "error",
   },

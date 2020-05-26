@@ -63,6 +63,7 @@
             "react.js",
             "next.js",
             "shared.js",
+            "prettier.js",
             "README.md"
           ]
         }
