@@ -3,7 +3,6 @@ version: 2.1
 orbs:
   slack: circleci/slack@3.4.2
 
-
 docker: &DOCKER_NODE
   docker:
     - image: circleci/node:10.20
@@ -58,9 +57,9 @@ jobs:
           at: ~/
       - run: npm run build
       - persist_to_workspace:
-            root: ~/
-            paths:
-              - project/pkg
+          root: ~/
+          paths:
+            - project/pkg
       - slack/notify-on-failure:
           only_for_branches: master
 
@@ -98,7 +97,6 @@ workflows:
           requires:
             - unit
             - lint
-            - typecheck
       - release:
           requires:
             - lint
