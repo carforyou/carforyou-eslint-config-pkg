@@ -3,7 +3,7 @@
 bad_expected=6
 good_expected=0
 
-bad_output=$(npx eslint --format json "test/bad/**/*")
+bad_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/bad/**/*")
 echo $bad_output
 
 bad_failures=$(echo $bad_output | npx jq ". | map(.errorCount) | add")
@@ -14,7 +14,7 @@ if [ "$bad_failures" != "$bad_expected" ]; then
 fi
 
 
-good_output=$(npx eslint --format json "test/good/**/*")
+good_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/good/**/*")
 echo $good_output
 
 good_failures=$(echo $good_output | npx jq ". | map(.errorCount) | add")
