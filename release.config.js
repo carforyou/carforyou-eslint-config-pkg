@@ -5,8 +5,12 @@ module.exports = {
     "master",
     {
       name: "!(+([0-9])?(.{+([0-9]),x}).x|master)",
-      prerelease: "${ name }" + `-${process.env.CIRCLE_SHA1}`
-    }
+      prerelease: "${ name }" + `-${process.env.CIRCLE_SHA1}`,
+    },
+    {
+      name: "initial-rules",
+      prerelease: "rc1" + `-${process.env.CIRCLE_SHA1}`,
+    },
   ],
-  pkgRoot: "pkg"
+  pkgRoot: "pkg",
 }
