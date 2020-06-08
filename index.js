@@ -96,6 +96,7 @@ module.exports = {
     ],
     "prettier/prettier": "error",
     "sort-keys": "off",
+    "no-console": "error",
     "json/*": "error",
   },
 }
