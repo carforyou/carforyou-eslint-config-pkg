@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-bad_expected=6
+bad_expected=8
 good_expected=0
 
 bad_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/bad/**/*")
