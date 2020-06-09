@@ -1,1 +1,1 @@
-const yo = true;
+const yo: any = true
