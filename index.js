@@ -95,6 +95,7 @@ module.exports = {
       "error",
       { functions: false, variables: false },
     ],
+    "no-shadow": "error",
     "prettier/prettier": "error",
     "sort-keys": "off",
     "no-console": "error",
