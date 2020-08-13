@@ -7,6 +7,7 @@
     "build": "pika build",
     "lint": "eslint --ext ts,js,tsx,jsx,json .",
     "format": "npm run lint -- --fix",
+    "test": "npm run test:unit",
     "test:unit": "./test/test.sh"
   },
   "repository": {
