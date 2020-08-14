@@ -100,5 +100,6 @@ module.exports = {
     "sort-keys": "off",
     "no-console": "error",
     "json/*": "error",
+    "import/no-internal-modules": "error",
   },
 }
