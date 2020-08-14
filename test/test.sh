@@ -1,25 +1,5 @@
 #!/usr/bin/env bash
 
-bad_expected=14
-good_expected=0
-
-bad_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/bad/**/*")
-echo $bad_output
-
-bad_failures=$(echo $bad_output | npx jq ". | map(.errorCount) | add")
-
-if [ "$bad_failures" != "$bad_expected" ]; then
-  echo "Expected $bad_expected but got $bad_failures linting errors for badly formatted files"
-  exit 1
-fi
-
-
-good_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/good/**/*")
-echo $good_output
-
-good_failures=$(echo $good_output | npx jq ". | map(.errorCount) | add")
-
-if [ "$good_failures" != "$good_expected" ]; then
-  echo "Expected $good_expected but got $good_failures linting errors for well formatted files"
-  exit 1
-fi
+${PWD}/test/testRunner.sh -c .eslintrc.js -g 0 -b 16
+${PWD}/test/testRunner.sh -c .eslintrc.react.js -g 0 -b 18
+${PWD}/test/testRunner.sh -c .eslintrc.node.js -g 0 -b 18
