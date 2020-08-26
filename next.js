@@ -23,6 +23,7 @@ module.exports = {
       "error",
       {
         allow: [
+          // eslint-disable-next-line @typescript-eslint/no-var-requires
           ...require("./shared.js").whitelistedImports,
           "**/configuration/**/*",
           "**/configuration/*",
