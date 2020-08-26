@@ -57,6 +57,7 @@ module.exports = {
     "import/no-internal-modules": [
       "error",
       {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         allow: require("./shared.js").whitelistedImports,
       },
     ],
