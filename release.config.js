@@ -8,8 +8,8 @@ module.exports = {
       prerelease: "${ name }" + `-${process.env.CIRCLE_SHA1}`,
     },
     {
-      name: "renovate/typescript-4.x",
-      prerelease: "ts-4" + `-${process.env.CIRCLE_SHA1}`,
+      name: "renovate/eslint-7.x",
+      prerelease: "eslint-7" + `-${process.env.CIRCLE_SHA1}`,
     },
   ],
   pkgRoot: "pkg",
