@@ -18,9 +18,9 @@
   "license": "MIT",
   "homepage": "https://github.com/carforyou/carforyou-eslint-config-pkg#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^3.10.0",
-    "@typescript-eslint/parser": "^3.10.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-cypress": "^2.10.3",
