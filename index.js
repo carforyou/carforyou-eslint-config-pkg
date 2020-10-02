@@ -38,6 +38,8 @@ module.exports = {
     },
   ],
   rules: {
+    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -96,7 +98,8 @@ module.exports = {
       "error",
       { functions: false, variables: false },
     ],
-    "no-shadow": "error",
+    "no-redeclare": "off",
+    "no-shadow": "off",
     "prettier/prettier": "error",
     "sort-keys": "off",
     "no-console": "error",
