@@ -105,5 +105,38 @@ module.exports = {
     "no-console": "error",
     "json/*": "error",
     "import/no-internal-modules": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always-and-inside-groups",
+        groups: [
+          ["builtin", "external"],
+          "internal",
+          ["parent", "sibling"],
+          ["index", "object"],
+        ],
+        pathGroups: [
+          {
+            pattern: "~/**",
+            group: "internal",
+            position: "after",
+          },
+        ],
+        alphabetize: {
+          order: "desc",
+          caseInsensitive: true,
+        },
+      },
+    ],
+    "sort-imports": [
+      "error",
+      {
+        ignoreCase: true,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ["none", "single", "all", "multiple"],
+        allowSeparatedGroups: true,
+      },
+    ],
   },
 }
