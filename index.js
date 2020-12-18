@@ -122,7 +122,7 @@ module.exports = {
             position: "after",
           },
           {
-            pattern: "~/lib",
+            pattern: "~/lib/**",
             group: "internal",
             position: "after",
           },
