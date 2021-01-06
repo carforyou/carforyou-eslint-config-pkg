@@ -120,42 +120,7 @@ module.exports = {
             pattern: "@carforyou/**",
             group: "external",
             position: "after",
-          },
-          {
-            pattern: "~/lib/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "~/components/hooks/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "~/components/contexts/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "~/assets/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "@carforyou/components/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "~/components/**",
-            group: "internal",
-            position: "after",
-          },
-          {
-            pattern: "~/**",
-            group: "internal",
-            position: "after",
-          },
+          }
         ],
         alphabetize: {
           order: "desc",
