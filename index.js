@@ -120,7 +120,7 @@ module.exports = {
             pattern: "@carforyou/**",
             group: "external",
             position: "after",
-          }
+          },
         ],
         alphabetize: {
           order: "desc",
