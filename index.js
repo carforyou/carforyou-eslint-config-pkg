@@ -121,6 +121,11 @@ module.exports = {
             group: "external",
             position: "after",
           },
+          {
+            pattern: "~/**",
+            group: "internal",
+            position: "after",
+          },
         ],
         alphabetize: {
           order: "desc",
