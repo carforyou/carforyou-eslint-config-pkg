@@ -50,9 +50,9 @@ This package provides multiple eslint configurations. They build on top of one a
 Create `.prettierrc.js` in the root of the project:
 
 ```
-  module.exports = {
-    extends: ["@carforyou/eslint-config/prettier"],
-  }
+module.exports = {
+  ...require("@carforyou/eslint-config/prettier"),
+}
 ```
 
 ## VSCode integration
