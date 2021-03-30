@@ -11,7 +11,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:testing-library/react",
     "plugin:cypress/recommended",
-    "prettier/react",
+    "plugin:prettier/recommended",
   ],
   plugins: ["react", "testing-library", "cypress"],
   settings: {
