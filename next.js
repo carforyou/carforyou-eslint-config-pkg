@@ -28,6 +28,7 @@ module.exports = {
           "**/configuration/**/*",
           "**/configuration/*",
           "next/*",
+          "next-auth/*",
           "next-i18next/*",
         ],
       },
