@@ -20,8 +20,7 @@
     },
     {
       "matchPackagePatterns": ["^@carforyou\/.*"],
-      "schedule": null,
-      "automerge": false
+      "schedule": null
     }
   ],
   "node": {
