@@ -8,8 +8,8 @@ module.exports = {
       prerelease: "${ name }" + `-${process.env.CIRCLE_SHA1}`,
     },
     {
-      name: "renovate/eslint-7.x",
-      prerelease: "eslint-7" + `-${process.env.CIRCLE_SHA1}`,
+      name: "renovate/eslint-8.x",
+      prerelease: "eslint-8" + `-${process.env.CIRCLE_SHA1}`,
     },
   ],
   pkgRoot: "pkg",
