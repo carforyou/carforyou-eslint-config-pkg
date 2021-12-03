@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-npm install @carforyou/eslint-config
+npm install @carforyou/eslint-config eslint
 ```
 
 Add a `lint` script to `package.json`:
