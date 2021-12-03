@@ -33,6 +33,7 @@ module.exports = {
         "jest/no-standalone-expect": "off",
         "testing-library/await-async-query": "off",
         "testing-library/prefer-screen-queries": "off",
+        "testing-library/await-async-utils": "off",
       },
     },
     {
