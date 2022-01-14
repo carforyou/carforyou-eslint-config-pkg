@@ -11,7 +11,7 @@ esac
 done
 
 bad_output=$(npx eslint --config ${CONFIG} --ignore-path .eslintignore.test --format json "test/bad/**/*")
-echo "Bad Test Cases:" 
+echo "Bad Test Cases:"
 echo -n $bad_output | npx jq .
 
 bad_failures=$(echo $bad_output | npx jq ". | map(.errorCount) | add")

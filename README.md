@@ -113,7 +113,7 @@ cd carforyou-eslint-config
 npm run build
 
 cd carforyou-listings-web
-npm link ../carforyou-eslint-config/pkg
+npm link ../carforyou-eslint-config
 ```
 
 ## Release a new version

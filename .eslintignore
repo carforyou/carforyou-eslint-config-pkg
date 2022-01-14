@@ -1,2 +1,2 @@
-pkg/**/*
-test/**
+pkg
+test

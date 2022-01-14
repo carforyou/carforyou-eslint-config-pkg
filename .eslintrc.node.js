@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["./react.js"],
+  extends: ["./pkg/react.js"],
   overrides: [
     {
       files: ["packMain.js"],
