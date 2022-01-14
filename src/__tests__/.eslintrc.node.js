@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["../../pkg/react.js"],
+  extends: ["../../pkg/node.js"],
 }
