@@ -4,10 +4,10 @@
   "description": "ESLint rules that we use at CAR FOR YOU",
   "scripts": {
     "version": "npm run build",
-    "build": "rimraf pkg && tsc --outDir pkg",
-    "lint": "eslint --ext ts,js,tsx,jsx,json .",
+    "build": "rimraf pkg && tsc -p tsconfig.json --outDir pkg",
+    "lint": "eslint --ext ts,js,tsx,jsx,json . --ignore-path test",
     "format": "npm run lint -- --fix",
-    "test": "npm run build && ./test/test.sh"
+    "test": "npm run build && ./src/__test__/test.sh"
   },
   "repository": {
     "type": "git",

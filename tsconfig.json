@@ -4,8 +4,9 @@
     "target": "es5",
     "moduleResolution": "node",
     "lib": ["esnext"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "jsx": "preserve"
   },
-  "include": ["src"],
+  "include": ["src", "test"],
   "exclude": ["node_modules", "pkg"]
 }
