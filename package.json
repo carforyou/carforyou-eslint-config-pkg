@@ -5,9 +5,9 @@
   "scripts": {
     "version": "npm run build",
     "build": "rimraf pkg && tsc -p tsconfig.json --outDir pkg",
-    "lint": "eslint --ext ts,js,tsx,jsx,json . --ignore-path test",
+    "lint": "eslint --ext ts,js,tsx,jsx,json . --ignore-path src/__tests__",
     "format": "npm run lint -- --fix",
-    "test": "npm run build && ./src/__test__/test.sh"
+    "test": "npm run build && ./src/__tests__/test.sh"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/node": "17.0.8",
+    "jest": "27.4.7",
     "jq-cli-wrapper": "1.6.1",
     "rimraf": "3.0.2",
     "semantic-release": "17.4.7",
