@@ -13,7 +13,7 @@
     },
     {
       "matchDatasources": ["docker", "final"],
-      "matchPackageNames": ["node", "@types/node"],
+      "matchPackageNames": ["node", "@types/node", "cimg/node"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "schedule": null,
       "automerge": true
