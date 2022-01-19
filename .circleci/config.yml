@@ -97,8 +97,7 @@ workflows:
             - build
       - build:
           requires:
-            - unit
-            - lint
+            - install
       - release:
           requires:
             - lint
