@@ -49,7 +49,7 @@
     "./prettier": "./pkg/prettier.js",
     "./next": "./pkg/next.js",
     "./react": "./pkg/react.js",
-    "./default": "./pkg/index.js"
+    ".": "./pkg/index.js"
   },
   "files": [
     "pkg/**/*"
