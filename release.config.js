@@ -12,5 +12,4 @@ module.exports = {
       prerelease: "eslint-8" + `-${process.env.CIRCLE_SHA1}`,
     },
   ],
-  pkgRoot: "pkg",
 }

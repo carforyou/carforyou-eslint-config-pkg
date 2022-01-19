@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
-    "allowJs": true
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "jsx": "preserve"
   },
-  "exclude": []
+  "include": ["src"],
+  "exclude": ["node_modules", "pkg"]
 }

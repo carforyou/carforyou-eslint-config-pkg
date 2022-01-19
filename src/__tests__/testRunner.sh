@@ -10,8 +10,8 @@ b) bad_expected=${OPTARG};;
 esac
 done
 
-bad_output=$(npx eslint --config ${CONFIG} --ignore-path .eslintignore.test --format json "test/bad/**/*")
-echo "Bad Test Cases:" 
+bad_output=$(npx eslint --config ${CONFIG} --format json "src/__tests__/bad/**/*")
+echo "Bad Test Cases:"
 echo -n $bad_output | npx jq .
 
 bad_failures=$(echo $bad_output | npx jq ". | map(.errorCount) | add")
@@ -22,7 +22,7 @@ if [ "$bad_failures" != "$bad_expected" ]; then
 fi
 
 
-good_output=$(npx eslint --ignore-path .eslintignore.test --format json "test/good/**/*")
+good_output=$(npx eslint --format json "src/__tests__/good/**/*")
 echo "Good Test Cases:"
 echo -n $good_output | npx jq .
 
