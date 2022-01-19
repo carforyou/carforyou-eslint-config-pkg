@@ -90,7 +90,7 @@ workflows:
       - unit:
           requires:
             - install
-            - unit
+            - build
       - lint:
           requires:
             - install
