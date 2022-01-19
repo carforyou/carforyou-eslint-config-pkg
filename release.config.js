@@ -11,5 +11,5 @@ module.exports = {
       name: "renovate/eslint-8.x",
       prerelease: "eslint-8" + `-${process.env.CIRCLE_SHA1}`,
     },
-  ]
+  ],
 }
