@@ -35,7 +35,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
-          command: npm run test:unit -- --maxWorkers=4
+          command: npm run test -- --maxWorkers=4
           no_output_timeout: 3m
       - slack/notify-on-failure:
           only_for_branches: master
@@ -90,9 +90,11 @@ workflows:
       - unit:
           requires:
             - install
+            - unit
       - lint:
           requires:
             - install
+            - build
       - build:
           requires:
             - unit
