@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["../../pkg/index.js"]
+  extends: ["../../pkg/index.js"],
 }
