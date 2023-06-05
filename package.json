@@ -42,7 +42,7 @@
     "jq-cli-wrapper": "1.6.1",
     "rimraf": "5.0.1",
     "semantic-release": "19.0.5",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   },
   "main": "pkg/index.js",
   "exports": {
