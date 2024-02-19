@@ -18,9 +18,9 @@
   "homepage": "https://github.com/carforyou/carforyou-eslint-config-pkg#readme",
   "dependencies": {
     "@rushstack/eslint-patch": "1.6.0",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
-    "@typescript-eslint/eslint-plugin-tslint": "5.62.0",
-    "@typescript-eslint/parser": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "7.0.1",
+    "@typescript-eslint/eslint-plugin-tslint": "7.0.1",
+    "@typescript-eslint/parser": "7.0.1",
     "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-cypress": "2.15.1",
